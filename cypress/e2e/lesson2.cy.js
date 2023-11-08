@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-it("lesson1",()=>{
+it("lesson2",()=>{
     // visit command used to visit any URL you want 
     cy.visit("/");
 
