@@ -10,5 +10,8 @@ module.exports = defineConfig({
     // viewportHeight:660,
     // viewportWidth:550,
     experimentalStudio:true, 
+    trashAssetsBeforeRuns:true,
+    screenshotOnRunFailure:true,
+    screenshotsFolder:"MyScreenshots",
   },
 });
