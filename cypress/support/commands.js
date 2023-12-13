@@ -35,3 +35,11 @@ Cypress.Commands.add('login',(email,password)=>{
     cy.get("#send2").click()
 })
 
+Cypress.Commands.add('loginNopcommerce',()=>{
+    // i used fixture instead of sending email and password from test file . 
+    cy.fixture("./files/example.json").then((data)=>{
+        cy.get("#Email").clear().type(data.email);
+        cy.get("#Password").clear().type(data.password);
+        cy.get(".login-button").click();
+    })
+})
