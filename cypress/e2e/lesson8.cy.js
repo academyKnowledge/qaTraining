@@ -46,7 +46,7 @@ describe('Assertions', () => {
         cy.get("button[title=Search]").should("have.prop","disabled",true);
     });
 
-    it.only('focus-checked-enabled-selected', () => {
+    it('focus-checked-enabled-selected', () => {
         cy.visit("http://127.0.0.1:5500/cypress/index.html");
         cy.get("#myTextField").focus().should("have.focus");
         cy.get("#Banana").check().should("be.checked");
