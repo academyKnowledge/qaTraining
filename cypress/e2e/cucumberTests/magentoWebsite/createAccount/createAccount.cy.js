@@ -2,7 +2,11 @@ import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 
 const firstName="Razan";
 const lastName="user";
-const email = "razanUsser55@gmail.com";
+const email = "razanUsser"+Math.floor(Math.random()*100)+"@gmail.com"; 
+
+// float number  Math.random() 0 - 1 0.1 , 0.2345566778 
+// Math.floor(Math.random()*100) // integer numbers 0-9 
+
 const password = "test@123%6";
 const confirmPassword = "test@123%6";
 
